@@ -1,0 +1,9 @@
+
+.container {
+  flex-shrink: 0;
+  width: 180px;
+
+  @include tablet {
+    width: 125px;
+  }
+}

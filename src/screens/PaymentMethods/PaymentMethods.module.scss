@@ -1,0 +1,12 @@
+.header {
+  cursor: default;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+.add-card-btn {
+  @include tablet {
+    margin-bottom: 60px;
+  }
+}

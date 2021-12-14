@@ -1,0 +1,20 @@
+.item {
+  font-size: 80px;
+  line-height: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $BellezaFont;
+  opacity: 0.87;
+
+  @include medium {
+    line-height: 76px;
+  }
+  @include tablet {
+    font-size: 60px;
+    line-height: 66px;
+  }
+  @include mobile {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}

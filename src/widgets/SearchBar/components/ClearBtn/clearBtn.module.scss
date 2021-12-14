@@ -1,0 +1,19 @@
+.item {
+  margin-right: 28px;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+
+  &_theme {
+    &_light {
+      color: rgba($black, 0.38);
+    }
+    &_dark {
+      color: rgba($white, 0.38);
+    }
+  }
+  
+  &:hover {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,9 @@
+.drawer {
+  width: 520px;
+  padding: 100px 50px 160px;
+
+  @include mobile {
+    width: 100%;
+    padding: 40px 20px 60px;
+  }
+}

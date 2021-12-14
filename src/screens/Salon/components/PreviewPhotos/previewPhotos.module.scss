@@ -1,0 +1,30 @@
+
+.container {
+  position: relative;
+  max-height: 410px;
+}
+
+.singlePhoto {
+  max-height: 410px;
+}
+
+.containerGrid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 206px;
+  grid-template-rows: 200px 200px;
+  gap: 10px;
+  
+  @include tablet {
+    grid-template-rows: 180px 180px;
+  }
+}
+
+.container, 
+.containerGrid {
+  margin-bottom: 40px;
+
+  @include mobile {
+    display: none;
+  }
+}

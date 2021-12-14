@@ -1,0 +1,14 @@
+
+.item {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  margin: 8px;
+
+  @include mobile {
+    width: 90px;
+    height: 90px;
+    margin: 12px;
+  }
+}

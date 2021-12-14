@@ -1,0 +1,66 @@
+.container {
+  &:last-of-type {
+    padding-bottom: 5px;
+  }
+}
+
+.topGroup {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.name, .date {
+  font-size: 20px;
+  line-height: 20px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.name {
+  margin-bottom: 10px;
+  font-weight: bold;
+
+  @include tablet {
+    margin-bottom: 6px;
+  }
+}
+
+.rating {
+  margin-bottom: 15px;
+
+  @include tablet {
+    margin-bottom: 8px;
+  }
+}
+
+.comment {
+  max-width: 302px;
+  line-height: 24px;
+  white-space: normal;
+  overflow: auto;
+}
+
+.imagesGroup {
+  display: none;
+  flex-wrap: wrap;
+  margin: 30px -8px -8px;
+  
+  @include mobile {
+    margin: 12px -12px -12px;
+  }
+
+  &_hasImages {
+    display: flex;
+  }
+}
+
+.comma:not(:empty):not(:last-child):after {
+  content: ", ";
+}
+
+.divider {
+  margin: 40px 0;
+}

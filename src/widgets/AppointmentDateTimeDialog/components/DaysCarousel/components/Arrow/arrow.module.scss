@@ -1,0 +1,23 @@
+
+.item {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50vw;
+  background-color: lightblue;
+  pointer-events: none;
+  border: none;
+  
+  opacity: 0.2;
+
+  &_variant {
+    &_right {
+      right: 0;
+      transform: translateX(100%);
+    }
+    &_left {
+      left: 0;
+      transform: translateX(-100%);
+    }
+  }
+}

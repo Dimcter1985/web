@@ -1,0 +1,15 @@
+
+
+.button {
+  font-weight: bold;
+}
+
+.signUp {
+  @include tablet {
+    display: none;
+  }
+  &:hover {
+    background-color: $pink;
+    text-decoration: none;
+  }
+}

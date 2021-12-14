@@ -1,0 +1,26 @@
+.row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
+.nameColumn {
+  flex-shrink: 0;
+  flex-basis: 50%;
+  padding-right: 40px;
+
+  @include mobile {
+    flex-basis: 56%;
+    padding-right: 20px;
+  }
+}
+.caption {
+  margin-bottom: 10px;
+
+  @include mobile {
+    margin-bottom: 3px;
+  }
+}

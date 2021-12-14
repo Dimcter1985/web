@@ -1,0 +1,90 @@
+.group {
+  margin-bottom: 30px;
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
+.rowCaption {
+  margin-bottom: 10px;
+
+  @include mobile {
+    margin-bottom: 0px;
+  }
+}
+.nameWrapper {
+  flex-basis: 50%;
+  padding-right: 20px;
+
+  @include mobile {
+    flex-basis: 72%;
+  }
+}
+.servicesWrapper {
+  margin-bottom: 30px;
+  @include tablet {
+    margin-bottom: 20px;
+  }
+}
+.rowItem {
+  align-items: flex-start;
+  margin-bottom: 20px;
+
+  @include mobile {
+    margin-bottom: 0px;
+  }
+}
+.name {
+  flex-basis: 50%;
+  text-transform: capitalize;
+}
+.innerRow {
+  flex-grow: 1;
+}
+.quantityGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 63px;
+  text-align: center;
+  margin-left: -15px;
+
+  &_alone {
+    justify-content: center;
+  }
+
+  @include mobile {
+    min-width: 63px;
+    transform: translateX(-5px);
+  }
+}
+.button {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+
+  &:disabled {
+    opacity: 0.35;
+  }
+
+  @include mobile {
+    min-height: 23px;
+    padding-top: 2px;
+  }
+}
+.quantity {
+  @include mobile {
+    font-weight: normal;
+  }
+}
+.price {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: bold;
+
+  @include mobile {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: normal;
+  }
+}

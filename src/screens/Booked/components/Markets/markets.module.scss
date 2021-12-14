@@ -1,0 +1,27 @@
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: -6px;
+
+  @include tablet {
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+  @include mobile {
+    flex-direction: column;
+    margin-top: 16px;
+  }
+}
+.image {
+  & + & {
+    margin-left: 10px;
+
+    @include mobile {
+      margin-top: 10px;
+      margin-left: 0;
+    }
+  }
+}

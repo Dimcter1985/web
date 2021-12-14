@@ -1,0 +1,20 @@
+.form {
+  max-width: 320px;
+  margin: 0 auto 160px auto;
+}
+
+.composite {
+  width: 140px;
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.button {
+  margin-top: 24px;
+
+  @include mobile {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+}

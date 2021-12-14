@@ -1,0 +1,10 @@
+.item {
+  display: flex;
+  justify-content: center;
+  width: 35px;
+  margin-right: 25px;
+
+  @include mobile {
+    margin-right: 10px;
+  }
+}

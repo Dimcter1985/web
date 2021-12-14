@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  min-height: 500px;
+  margin-bottom: 50px;
+  padding: 30px 25px 20px;
+  border: 1px solid $black;
+  box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.19);
+
+  @include medium {
+    min-height: 382px;
+  }
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    box-shadow: initial;
+    border-left: 0;
+    border-right: 0;
+  }
+}
+.captionGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.caption {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.clear {
+  min-width: initial;
+  margin-right: -6px;
+  padding: 2px 6px;
+  font-weight: normal;
+  opacity: 0.6;
+  transition: opacity 0.15s linear;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+.productsWrapper {
+  margin-bottom: auto;
+}

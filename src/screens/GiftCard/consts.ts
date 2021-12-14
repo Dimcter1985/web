@@ -1,0 +1,1 @@
+export const INFO_SECTION = 'buy-gift-card-info-section'

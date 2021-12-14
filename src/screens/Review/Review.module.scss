@@ -1,0 +1,114 @@
+.content {
+  max-width: 610px;
+  margin: 0 auto 160px auto;
+
+  @include mobile {
+    max-width: 320px;
+  }
+}
+
+.header {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  
+  @include tablet {
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+
+.description {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 600px;
+  margin-bottom: 70px;
+
+  @include tablet {
+    flex-direction: column;
+    min-width: initial;
+    margin-bottom: 40px;
+  }
+
+  @include mobile {
+    min-width: 320px;
+  }
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  margin-left: -4px;
+}
+
+.textfield {
+  height: 140px;
+  margin-bottom: 11px;
+}
+
+.label {
+  text-transform: none;
+  margin-bottom: 15px;
+
+  @include mobile {
+    margin-bottom: 30px;
+  }
+}
+
+.other {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+
+  @include tablet {
+    padding-top: 30px;
+    border-top: 1px solid $lightGray;
+  }
+}
+
+.anonymous {
+  margin-right: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 490px;
+  margin: 0 auto;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.button {
+  &_disabled {
+    opacity: 0.6;
+  }
+  
+  &:not(:first-child) {
+    margin-left: 50px;
+  }
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
+}
+
+.confirm-content {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}

@@ -1,0 +1,25 @@
+.caption {
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  @include mobile {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+.errorRoot {
+  margin-top: -5px;
+  margin-bottom: 20px;
+  
+  @include tablet {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+}
+
+.text {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: $whiteAccent;
+}

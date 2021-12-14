@@ -1,0 +1,12 @@
+
+.iconWrapper {
+  margin-right: 30px;
+
+  @include medium {
+    margin-right: 15px;
+  }
+}
+.iconsGroup {
+  display: flex;
+  margin-bottom: 40px;
+}

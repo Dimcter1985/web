@@ -1,0 +1,42 @@
+.map {
+  width: 100%;
+  position: sticky;
+  top: headerHeight(regular);
+  height: calc(100vh - #{headerHeight(regular)});
+  margin-top: -130px;
+  
+  @include medium {
+    top: headerHeight(medium);
+    height: calc(100vh - #{headerHeight(medium)});
+  }
+  @include tablet {
+    top: headerHeight(tablet);
+    height: calc(100vh - #{headerHeight(tablet)});
+    margin-top: 0;
+  }
+}
+
+.checkbox-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  background-color: $white;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 175px;
+  height: 35px;
+}
+
+.text {
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}

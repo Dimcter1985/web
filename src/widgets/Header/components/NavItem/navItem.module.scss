@@ -1,0 +1,24 @@
+.item {
+  display: flex;
+
+  & + & {
+    margin-left: 20px;
+  }
+  
+  &_hidden_mobile {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &_hidden_desktop {
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+

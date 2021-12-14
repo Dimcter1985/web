@@ -1,0 +1,11 @@
+.block {
+  margin-bottom: 30px;
+
+  @include tablet {
+    margin-bottom: 10px;
+  }
+}
+
+.text {
+  font-weight: bold;
+}

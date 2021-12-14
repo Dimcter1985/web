@@ -1,0 +1,25 @@
+
+.item {
+  position: absolute;
+  display: none;
+  left: -2px;
+  top: calc(100% + 6px);
+  width: calc(100% - 230px);
+  z-index: 1;
+  min-height: 402px;
+  padding: 0 24px 12px 60px;
+  border: 1.5px solid;
+
+  &_theme {
+    &_light {
+      background-color: $white;
+    }
+    &_dark {
+      background-color: $black;
+    }
+  }
+
+  &_visible {
+    display: block;
+  }
+}

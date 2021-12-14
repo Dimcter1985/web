@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+      
+  @include mobile {
+    align-items: center;
+    margin-bottom: 40px;
+    order: 3;
+  }
+}

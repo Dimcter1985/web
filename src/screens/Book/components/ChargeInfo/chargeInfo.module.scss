@@ -1,0 +1,17 @@
+.item {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  background-color: $white;
+  color: $black;
+  max-width: 540px;
+  max-height: 100px;
+  padding: 20px 0;
+
+  @include mobile {
+    font-size: 1rem;
+    max-width: 315px;
+    min-height: 95px;
+    padding: 10px 15px;
+  }
+}

@@ -1,0 +1,22 @@
+.container {
+  margin-bottom: 16px;
+
+  @include tablet {
+    margin-bottom: 22px;
+  }
+}
+.name {
+  margin-bottom: 2px;
+  font-size: 20px;
+  line-height: 20px;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+.time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+}

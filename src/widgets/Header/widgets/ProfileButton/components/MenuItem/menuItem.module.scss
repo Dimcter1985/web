@@ -1,0 +1,13 @@
+
+.item {
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(white, 0.2);
+  }
+}

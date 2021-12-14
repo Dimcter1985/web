@@ -1,0 +1,31 @@
+.root {
+  width: 685px;
+  min-height: 450px;
+  border-radius: 0;
+
+  @include mobile {
+    margin: 0;
+    max-width: 335px;
+    min-height: initial;
+  }
+}
+
+.container {
+  flex-grow: 1;
+}
+
+.close-button {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  text-transform: uppercase;
+  color: $white;
+  padding: 10px 0;
+  opacity: 0.87;
+
+  @include mobile {
+    right: 20px;
+    font-size: 12px;
+    padding: 10px;
+  }
+}

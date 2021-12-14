@@ -1,0 +1,21 @@
+
+.item {
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 30px;  
+  text-transform: uppercase;
+  color: #000000;
+
+  @include medium {
+    margin-bottom: 20px;
+  }
+  @include tablet {
+    margin-top: 32px;
+  }
+  @include mobile {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}

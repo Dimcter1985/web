@@ -1,0 +1,14 @@
+.item {
+  display: flex;
+  margin-bottom: 150px;
+
+  @include medium {
+    margin-bottom: 80px;
+  }
+  @include tablet {
+    margin-bottom: 40px;
+  }
+  @include mobile {
+    flex-direction: column;
+  }
+}

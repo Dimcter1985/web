@@ -1,0 +1,5 @@
+node_modules
+build.sh
+.git
+.jest
+README.md

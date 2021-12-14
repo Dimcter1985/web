@@ -1,0 +1,1 @@
+export default (process.browser ? window.localStorage : {}) as IStorage

@@ -1,0 +1,59 @@
+// Media queries
+@mixin large {
+  @media (min-width: 1600px) { @content; }
+}
+
+@mixin medium {
+  @media (max-width: 1280px) { @content; }
+}
+
+@mixin tablet {
+  @media (max-width: 960px) { @content; }
+}
+
+@mixin mobile {
+  @media (max-width: 600px) { @content; }
+}
+
+@mixin extra-small {
+  @media (max-width: 374px) { @content; }
+}
+
+// Text overflow
+@mixin textOverflow($property: 1) {
+  display: -webkit-box;
+  overflow: hidden;
+  word-break: break-word;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $property;
+  -webkit-box-orient: vertical;
+}
+
+@mixin accent {
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: -1px;
+    background-color: transparent;
+    transition: background-color;
+    transition-duration: 150ms;
+  }
+
+  &:hover {
+    &::after {
+      background-color: $black;
+    }
+  }
+}
+
+@mixin defaultHover($value: 0.5) {
+
+  transition: opacity 0.15s linear;
+
+  &:hover {
+    opacity: $value;
+  }
+}

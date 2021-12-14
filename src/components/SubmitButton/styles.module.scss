@@ -1,0 +1,48 @@
+.submit {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  &_theme {
+    &_black {
+      background-color: $black;
+      color: $white;
+    }
+    &_pink {
+      background-color: $pink;
+      color: $black;
+    }
+    &_white {
+      background-color: $white;
+      color: $black;
+    }
+  }
+
+  &_size {
+    &_small {
+      width: 220px;
+      padding: 10px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &_large {
+      width: 320px;
+      padding: 13px 10px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  transition: opacity 250ms;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  @include mobile() {
+    width: calc(100% - 60px);
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

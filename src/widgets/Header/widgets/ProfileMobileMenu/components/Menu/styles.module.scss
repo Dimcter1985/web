@@ -1,0 +1,19 @@
+.menu {
+  position: fixed;
+  top: headerHeight(tablet);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $white;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  transform: translateX(-100%);
+  transition-property: transform;
+  transition-duration: 300ms;
+  overflow: auto;
+  z-index: 1;
+
+  &_visible {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 1440px;
+  padding: 250px 0 167px;
+  
+  @include tablet {
+    padding: 0 0 20px 0;
+  }
+}
+
+.leave {
+  top: 42%;
+
+  @include tablet {
+    top: 322px;
+    min-height: 454px;
+  }
+}
+
+.gradient {
+  @include mobile() {
+    transform: translate(-50%, -60%);
+  }
+}

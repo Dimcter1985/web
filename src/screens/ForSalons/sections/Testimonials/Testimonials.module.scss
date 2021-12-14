@@ -1,0 +1,34 @@
+.content {
+  padding-top: 120px;
+  @include tablet {
+    padding-top: 75px;
+  }
+
+  @include mobile {
+    padding-top: initial;
+  }
+}
+
+.reviews {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet {
+    flex-direction: column;
+    max-width: 330px;
+    margin-bottom: 90px;
+  }
+
+  @include mobile {
+    max-width: 260px;
+    margin-bottom: 80px;
+  }
+}
+
+.button {
+  margin-top: 100px;
+}

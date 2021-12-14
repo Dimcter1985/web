@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+
+.right-arrow, .left-arrow {
+  &_notActive {
+    opacity: 0.38;
+  }
+}
+
+.right-arrow {
+  transform: rotate(180deg);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.count {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 65px;
+}

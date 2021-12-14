@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  margin-bottom: 130px;
+
+  @include medium {
+    margin-bottom: 100px;
+  }
+  @include tablet {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+}
+.divider {
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.16);
+}
+.content {
+  flex-grow: 1;
+}
+.asideRight {
+  flex-shrink: 0;
+  flex-basis: 360px;
+  margin-left: 100px;
+
+  @include medium {
+    margin-left: 20px;
+  }
+  @include tablet {
+    margin-left: 0;
+  }
+}

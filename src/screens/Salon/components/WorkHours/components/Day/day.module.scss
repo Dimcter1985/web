@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.label {
+  font-weight: bold;
+}
+.hours {
+  &_closed {
+    color: $red;
+  }
+}

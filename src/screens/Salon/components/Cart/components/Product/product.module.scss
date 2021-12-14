@@ -1,0 +1,58 @@
+
+.container {
+  display: flex;
+  margin-bottom: 40px;
+
+  @include medium {
+    margin-bottom: 25px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.index {
+  margin-right: 5px;
+}
+.cost {
+  margin-left: 20px;
+}
+.index, .name, .cost {
+  font-size: 24px;
+  line-height: 30px;
+
+  @include medium {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+.contentGroup {
+  flex-grow: 1;
+}
+.infoGroup {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  @include mobile {
+    margin-bottom: 25px;
+  }
+}
+.controlsGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.remove {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+
+  opacity: 0.6;
+  transition: opacity 0.15s linear;
+
+  &:hover {
+    opacity: 1;
+  }
+}

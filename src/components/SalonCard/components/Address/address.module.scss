@@ -1,0 +1,9 @@
+
+.item {
+  margin-bottom: 26px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  @include textOverflow;
+}

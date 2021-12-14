@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $black;
+  width: 65px;
+  height: 25px;
+  padding: 0;
+  margin-top: 10px;
+
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+
+  @include mobile{
+    margin-top: 20px;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+  
+}
+
+.time {
+  font-size: 14px;
+}

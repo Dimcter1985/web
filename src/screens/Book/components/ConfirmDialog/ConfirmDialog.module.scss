@@ -1,0 +1,10 @@
+.dialog {
+  border: 2px solid $white;
+}
+
+.content {
+  margin-top: 90px;
+  @include mobile {
+    margin-top: 60px;
+  }
+}

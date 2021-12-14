@@ -1,0 +1,15 @@
+.item {
+  white-space: nowrap;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.text {
+  display: inline-block;
+  text-transform: uppercase;
+  
+  &_active {
+    border-bottom: 1px solid $black;
+  }
+}

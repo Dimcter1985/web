@@ -1,0 +1,40 @@
+.content {
+  max-width: 1240px;
+  padding-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet {
+    padding-top: 75px;
+    max-width: 420px;
+  }
+
+  @include mobile {
+    padding-top: initial;
+  }
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  
+  &:not(:last-child) {
+    margin-bottom: 80px;
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.card {
+  width: 420px;
+  @include mobile {
+    max-width: 245px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

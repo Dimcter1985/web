@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 22px;
+  margin-left: auto;
+  min-height: 65px;
+}
+
+.caption {
+  margin-right: 5px;
+}
+
+.sortSection {
+  min-width: 110px;
+  margin-left: auto;
+}
+
+.radioGroup {
+  margin-top: -2px;
+}
+
+.label, .currentSortText {
+  text-transform: uppercase;
+}
+
+.currentSort {
+  display: flex;
+  justify-content: space-between;
+}
+
+.currentSortText {
+  font-weight: 600;
+  width: 70px;
+}
+
+.icon-button {
+  margin: -7px 0px 0px 0px;
+  padding: 15px 10px;
+}

@@ -1,0 +1,33 @@
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 365px;
+  max-height: 40px;
+  margin-left: 120px;
+
+  @include mobile {
+    max-width: 255px;
+    max-height: 36px;
+    margin-right: 20px;
+    margin-left: auto;
+  }
+}
+
+.button {
+  max-width: 175px;
+  &:only-child {
+    margin-left: auto;
+  }
+  
+  @include mobile {
+    max-width: 120px;
+  }
+}
+
+.pending-button {
+  background-color: $paymentFailed;
+  &:hover {
+    background-color: $paymentFailed;
+    opacity: 0.8;
+  }
+}

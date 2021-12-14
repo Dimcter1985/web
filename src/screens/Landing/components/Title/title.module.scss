@@ -1,0 +1,23 @@
+.title {
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: $BellezaFont;
+
+  @include large {
+    
+  }
+
+  @include medium {
+    font-size: 6.5vw;
+    line-height: calc(6.5vw + 30px);
+  }
+
+  @include mobile {
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: 2px;
+  }
+}

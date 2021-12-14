@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 34px;
+  padding: 0;
+  color: $white;
+  text-align: left;
+
+  &_expired {
+    cursor: default;
+  }
+}
+
+.iconWrapper {
+  display: flex;
+  flex-direction: column;
+
+  &_primary {
+    margin-top: 6px;
+  }
+}
+
+.primary {
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.infoWrapper {
+  margin-left: 25px;
+  align-self: flex-start;
+}
+
+.radioWrapper {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $white;
+  border-radius: 50%;
+}
+
+.radioIcon {
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border-radius: 50%;
+
+  &_active {
+    background-color: $white;
+  }
+}
+
+.text {
+  font-size: 24px;
+  line-height: 30px;
+
+  &_primary {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &_secondary {
+    color: #838383;
+  }
+  &_expired {
+    color: #FF453B;
+  }
+}

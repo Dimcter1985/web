@@ -1,0 +1,11 @@
+.subtitle {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  &_variant {
+    &_underlined {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.paper {
+  width: 550px;
+  min-height: 360px;
+
+  @include mobile {
+    min-height: 335px;
+  }
+}
+
+.dialog {
+  border: 2px solid $whiteAccent;
+}
+
+.content {
+  margin-top: 60px;
+}
+
+.button-wrapper {
+  margin-bottom: 60px;
+}
+
+.button {
+  @include mobile {
+    width: 295px;
+    height: 48px;
+  }
+}

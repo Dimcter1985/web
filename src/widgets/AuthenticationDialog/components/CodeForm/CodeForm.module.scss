@@ -1,0 +1,32 @@
+.wrapper {
+  margin-top: 33px;
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+
+.label {
+  margin-bottom: 25px;
+}
+
+.error {
+  margin-top: 8px;
+}
+
+.resend {
+  display: flex;
+  margin-top: 37px;
+
+  &_hasError {
+    margin-top: 10px;
+  }
+}
+
+.resend-text {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.resend-button {
+  color: $whiteAccent;
+  text-decoration: underline;
+  font-weight: 700;
+}

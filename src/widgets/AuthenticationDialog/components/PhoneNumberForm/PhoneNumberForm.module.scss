@@ -1,0 +1,33 @@
+.wrapper {
+  margin-top: 30px;
+  margin-bottom: 12px;
+
+  @include tablet {
+    margin-top: 20px;
+  }
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 3px;
+
+  @include tablet {
+    text-align: center;
+  }
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  margin-top: 21px;
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 15px;
+  }
+}
+
+.phone-wrapper {
+  margin-top: -20px;
+}

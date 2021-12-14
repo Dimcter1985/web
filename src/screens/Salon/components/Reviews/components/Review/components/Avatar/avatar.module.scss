@@ -1,0 +1,28 @@
+
+.item {
+  width: 125px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+
+  @include tablet {
+    width: 100px;
+    height: 75px;
+  }
+}
+.dummy, .dummyFailed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 100px;
+  background-color: $lightGray;
+
+  @include tablet {
+    width: 100px;
+    height: 75px;
+  }
+}
+.dummyFailed {
+  color: $red;
+}

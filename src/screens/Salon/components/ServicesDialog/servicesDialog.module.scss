@@ -1,0 +1,118 @@
+
+.paper {
+  max-width: 1000px;
+  @include tablet {
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+.headingGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  @include tablet {
+    margin-bottom: 16px;
+    padding: 0 20px;
+  }
+}
+
+.closeBtn {
+  margin-right: auto;
+  margin-left: -40px;
+
+  @include tablet {
+    margin-left: -10px;
+  }
+}
+
+.heading {
+  margin: 0 auto;
+  margin-left: -10px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @include tablet {
+    margin-left: -30px;
+    font-size: initial;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 100px 100px !important;
+
+  @include tablet {
+    padding: 20px 0px 40px !important;
+  }
+}
+
+.cartWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  @include mobile {
+    display: block;
+    margin: initial;
+  }
+}
+
+.cart {
+  max-width: 400px;
+  min-height: initial;
+  margin-bottom: 30px;
+  display: block;
+  
+  @include mobile {
+    max-width: 100%;
+    padding: 12px 20px 28px;
+  }
+}
+
+.services {
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 100px;
+    padding: 0px 20px;
+  }
+}
+
+.caption {
+  margin-top: 20px;
+  @include tablet {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+}
+
+.bookButtonWrapper {
+  margin: 0 auto;
+
+  @include mobile {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 16px 30px 40px;
+    background-color: white;
+  }
+
+  &_expanded {
+    padding-bottom: 50px;
+  }
+}
+
+.bookButton {
+  @include mobile {
+    width: 100%;
+  }
+}

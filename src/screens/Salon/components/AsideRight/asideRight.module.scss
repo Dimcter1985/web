@@ -1,0 +1,37 @@
+
+.bookButton {
+  display: flex;
+  width: 260px;
+  height: 48px;
+  margin: 30px auto 0 auto;
+}
+
+.mapBookGroup {
+  min-height: 410px;
+  margin-bottom: 100px;
+  padding: 25px 25px 20px;
+  border: 1px solid black;
+
+  &_cart {
+    min-height: initial;
+    padding: 0;
+    border: none;
+    margin-bottom: 80px;
+  }
+
+  @include medium {
+    margin-bottom: 60px;
+  }
+  @include tablet {
+    margin-bottom: 30px;
+    padding: 0;
+    border: none;
+  }
+}
+
+.book-now-button {
+  display: flex;
+  font-size: 20px;
+  height: 48px;
+  margin: 20px auto 0 auto;
+}

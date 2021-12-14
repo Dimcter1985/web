@@ -1,0 +1,12 @@
+
+.image {
+  display: block;
+  width: 100%;
+  max-height: calc(100vh - 240px);
+  object-fit: cover;
+  object-position: center;
+
+  @include tablet {
+    max-height: 40vh;
+  }
+}

@@ -1,0 +1,25 @@
+
+.button {
+  margin-bottom: 28px;
+
+  @include tablet {
+    margin-bottom: 36px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 16px;
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+}
+.text {
+  font-size: 20px;
+  line-height: 20px;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}

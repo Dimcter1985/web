@@ -1,0 +1,25 @@
+.container {
+  flex-grow: 1;
+}
+
+.logo {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 160px;
+  height: 52px;
+  transform: translate(-50%, calc(-50% - 4px));
+
+  transition: width, height;
+  transition-duration: 150ms;
+
+  @include medium {
+    width: 120px;
+    height: 42px;
+  }
+
+  @include tablet {
+    width: 85px;
+    height: 32px;
+  }
+}

@@ -1,0 +1,16 @@
+.button {
+  display: block;
+  width: 100%;
+  height: 48px;
+
+  @include mobile {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 700;
+}

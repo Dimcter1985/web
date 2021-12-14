@@ -1,0 +1,47 @@
+.input-field {
+  margin-left: 12px;
+
+  @include tablet {
+    margin-left: 4px;
+    padding: 16px 10px 16px 0;
+  }
+  
+  &::placeholder {
+    opacity: 0.4;
+    font-size: 20px;
+    line-height: 20px;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: -0.2px;
+    }
+  }
+}
+
+.input-root {
+  flex-wrap: nowrap;
+  padding: 0 !important;
+  font-size: 20px;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+.notched-outline {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.search-icon {
+  flex-shrink: 0;
+
+  @include tablet {
+    margin-left: 15px;
+    transform: scale(0.75);
+  }
+}

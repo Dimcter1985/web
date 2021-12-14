@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    margin: 0px 10px;
+  }
+}
+
+.image {
+  display: block;
+  margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 16px;
+  }
+}
+
+.name {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}

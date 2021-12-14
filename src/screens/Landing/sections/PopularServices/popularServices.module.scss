@@ -1,0 +1,59 @@
+
+.contentGroup {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0 80px;
+
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.title {
+  margin-bottom: 24px;
+  @include tablet {
+    text-align: center;
+  }
+}
+
+.subtitle {
+  @include tablet {
+    margin-bottom: 48px;
+    text-align: center;
+  }
+}
+
+.hideTablet {
+  @include tablet {
+    display: none;
+  }
+}
+
+.servicesGrid {
+  flex-basis: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-left: 40px;
+
+  @include medium {
+    flex-basis: 46%;
+  }
+  @include tablet {
+    flex-basis: initial;
+    gap: 20px;
+    margin: 0px 60px;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+.servicesCarousel {
+  display: none;
+  margin: 0px -10px;
+  overflow: visible;
+
+  @include mobile {
+    display: flex;
+  }
+}

@@ -1,0 +1,92 @@
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 110px;
+  margin-bottom: 140px;
+
+  @include medium {
+    padding-top: 80px;
+  }
+
+  @include tablet {
+    padding-top: 60px;
+  }
+  
+  @include mobile {
+    padding-left: 0;
+    padding-top: 40px;
+    align-items: flex-start;
+  }
+}
+
+.description, .addition {
+  max-width: 750px;
+  margin-right: auto;
+
+  @include tablet {
+    max-width: 500px;
+  }
+
+  @include mobile {
+    max-width: 265px;
+  }
+}
+
+.description {
+  margin-top: 65px;
+  margin-bottom: 20px;
+
+  @include mobile {
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  @include extra-small {
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+.addition {
+  @include mobile {
+    font-size: 12px;
+  }
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.button {
+  width: 500px;
+  min-height: 60px;
+  margin-top: 110px;
+  margin-right: auto;
+  cursor: pointer;
+
+  @include mobile {
+    margin-top: 60px;
+    width: 315px;
+    min-height: 48px;
+    margin-right: 20px;
+  }
+
+  @include extra-small {
+    margin-top: 55px;
+  }
+}
+
+.button-title {
+  font-weight: bold;
+  @include mobile {
+    font-size: 18px;
+  }
+}

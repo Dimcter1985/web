@@ -1,0 +1,36 @@
+.pending {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #FF453B;
+  margin: 40px 0;
+}
+
+.date-time {
+  margin-bottom: 50px;
+}
+
+.card-list {
+  margin-top: 30px;
+  @include mobile {
+    margin-bottom: 30px;
+  }
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.submit-button {
+  display: block;
+  margin: 30px auto 120px auto;
+}
+
+.dialog-wrapper {
+  border: 2px solid rgba(255, 255, 255, 0.87);
+}
+
+.dialog-title {
+  text-transform: none;
+}

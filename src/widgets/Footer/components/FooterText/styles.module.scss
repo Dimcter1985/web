@@ -1,0 +1,34 @@
+.text {
+  &_variant {
+
+    &_link {
+      line-height: 28px;
+    }
+
+    &_head {
+      margin-bottom: 18px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 25px;
+      text-transform: uppercase;
+
+      @include mobile {
+        margin-bottom: 30px;
+      }
+    }
+
+    &_agency {
+      display: flex;
+      align-items: center;
+
+      @include mobile {
+        justify-content: center;
+      }
+    }
+  }
+
+  @include medium {
+    font-size: initial;
+    line-height: 20px;
+  }
+}

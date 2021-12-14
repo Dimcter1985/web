@@ -1,0 +1,22 @@
+.arc {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  //max-width: 277px;
+
+  &_side {
+    &_right {
+      transform: scaleX(-1);
+    }
+  }
+}
+
+.item {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  &:first-child {
+    transform: rotateY(180deg);
+  }
+}

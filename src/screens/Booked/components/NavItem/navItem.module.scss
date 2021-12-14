@@ -1,0 +1,13 @@
+.container {
+  display: block;
+  margin-right: 50px;
+
+  @include tablet {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}

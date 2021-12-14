@@ -1,0 +1,65 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  
+  @include mobile {
+    position: relative;
+    margin-top: 150px;
+  }
+  
+  @include extra-small {
+    margin-top: 75px;
+  }
+}
+
+.info {
+  flex-grow: 1;
+  margin: 0 75px;
+
+  @include mobile {
+    margin: 0;
+    transform: translateY(80px);
+  }
+}
+
+.title {
+  @include mobile {
+    margin: 0 60px;
+  }
+}
+
+.text {
+  text-align: center;
+  margin-top: 20px;
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include mobile {
+    /* position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%); */
+    margin-top: 80px;
+  }
+}
+
+.button {
+  @include tablet {
+    /* position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); */
+    margin-top: 120px
+  }
+}

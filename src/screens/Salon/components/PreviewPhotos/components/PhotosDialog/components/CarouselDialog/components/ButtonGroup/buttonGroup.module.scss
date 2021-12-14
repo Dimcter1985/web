@@ -1,0 +1,16 @@
+.carouselButtonGroup {
+  position: absolute;
+  top: calc(50% - 20px);
+  right: -100px;
+  left: -100px;
+  display: flex;
+  justify-content: space-between;
+
+  @include medium {
+    right: -60px;
+    left: -60px;
+  }
+  @include tablet {
+    display: none;
+  }
+}

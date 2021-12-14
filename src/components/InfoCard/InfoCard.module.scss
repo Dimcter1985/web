@@ -1,0 +1,23 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+
+  @include mobile {
+    max-width: 240px;
+  }
+}
+
+.subtitle {
+  margin-top: 20px;
+  &_position {
+    &_center {
+      text-align: center;
+    }
+  }
+  
+  @include mobile {
+    font-size: 14px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,21 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  position: absolute;
+  left: -12px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+
+  @include tablet {
+    font-size: 1rem;
+  }
+}

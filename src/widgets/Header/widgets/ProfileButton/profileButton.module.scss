@@ -1,0 +1,25 @@
+
+.tooltip {
+  width: 192px;
+  padding: 12px 0;
+  background-color: black;
+}
+
+.arrow {
+  font-size: 1.25rem;
+  color: black;
+}
+
+.button {
+  font-weight: bold;
+}
+
+.signUp {
+  background-color: $pink;
+  @include tablet {
+    display: none;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}

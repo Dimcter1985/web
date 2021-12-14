@@ -1,0 +1,17 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+
+.title {
+  cursor: default;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}

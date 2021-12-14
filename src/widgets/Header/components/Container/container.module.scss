@@ -1,0 +1,16 @@
+
+.container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  transition: background-color;
+  transition-duration: 50ms;
+
+  &_background {
+    background-color: $white;
+  }
+  &_shadow {
+    box-shadow: 0 2px 4px 2px #C3C3C3;
+  }
+}

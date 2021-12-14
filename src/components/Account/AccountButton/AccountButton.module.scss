@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 220px;
+  height: 40px;
+  margin: 0 auto;
+
+  @include mobile {
+    width: 315px;
+    height: 48px;
+  }
+}

@@ -1,0 +1,3 @@
+@function headerHeight($breakpoint) {
+  @return map-get($header, $breakpoint);
+}

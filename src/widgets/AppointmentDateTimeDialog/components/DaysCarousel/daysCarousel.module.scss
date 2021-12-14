@@ -1,0 +1,27 @@
+
+.wrapper {
+  overflow: hidden;
+}
+.carousel {
+  max-width: 375px;
+  margin: 0 auto;
+  overflow: visible;
+  
+  @include tablet {
+    max-width: 240px;
+  }
+  @include mobile {
+    max-width: 100px;
+  }
+
+  :global {
+    .react-multi-carousel-item {
+      opacity: 0.35;
+      transition: opacity 0.15s linear;
+
+      &:hover, &--active {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+
+.outer {
+  position: relative;
+}
+
+.container {
+  padding-top: 100px;
+  padding-bottom: 270px;
+  background-image: url(./icons/serpantine.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right 40px;
+  
+  @include medium {
+    padding-top: 60px;
+    padding-bottom: 180px;
+  }
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    background-position: center right;
+  }
+  @include mobile {
+    background-image: url(./icons/serpantine_small.svg);
+  }
+}
+
+.title {
+  margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
+}
+
+.subtitle {
+  max-width: 702px;
+  margin-bottom: 52px;
+
+  @include medium {
+    width: 70%;
+  }
+  @include tablet {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button {
+  width: 500px;
+  height: 60px;
+  font-size: 24px;
+  line-height: 30px;
+
+  @include medium {
+    width: initial;
+  }
+  @include tablet {
+    width: 276px;
+    height: 46px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}

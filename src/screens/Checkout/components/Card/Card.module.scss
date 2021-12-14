@@ -1,0 +1,106 @@
+.card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  
+  @include mobile {
+    margin-bottom: 15px;
+  }
+
+  &_notValid {
+    cursor: default;
+  }
+}
+
+.icon {
+  display: flex;
+  flex-shrink: 0;
+
+  @include mobile {
+    align-self: flex-start;
+    margin-top: 3px;
+  }
+}
+
+.info {
+  display: flex;
+  margin-left: 20px;
+
+  @include mobile {
+    display: block;
+    margin-left: 15px;
+  }
+}
+
+.problems {
+  display: flex;
+}
+
+.text, .problem-text {
+  font-size: 24px;
+}
+
+.text {
+  text-transform: uppercase;
+  color: $white;
+  opacity: 0.87;
+
+  @include mobile {
+    text-align: left;
+    font-size: 18px;
+  }
+}
+
+.problem-text {
+  color: #FF453B;
+  margin-left: 25px;
+
+  @include mobile {
+    font-size: 1rem;
+    margin-left: 0;
+    &:not(:first-child) {
+      margin-left: 15px;
+    }
+  }
+
+  &_issue {
+    font-family: $Lato;
+    @include mobile {
+      font-weight: bold;
+    }
+  }
+
+  &_expired {
+    font-weight: bold;
+  }
+}
+
+.radio-wrapper {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid $white;
+  border-radius: 50%;
+
+  @include mobile {
+    align-self: flex-start;
+    margin-top: 4px;
+  }
+}
+
+.radio-icon {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+
+  &_isActive {
+    background-color: $white;
+  }
+}

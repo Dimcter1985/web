@@ -1,0 +1,25 @@
+.caption {
+  margin-bottom: 15px;
+}
+
+.address {
+  line-height: 20px;
+}
+.map {
+  height: 200px;
+  margin: 15px -25px 0 -25px;
+
+  &_hasItems {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @include tablet {
+    height: 220px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @include mobile {
+    height: 190px;
+  }
+}

@@ -1,0 +1,14 @@
+
+.item {
+  margin: 0px 100px;
+
+  @include medium {
+    margin: 0px 40px;
+  }
+  @include tablet {
+    margin: 0px 20px;
+  }
+  @include mobile {
+    margin: 0;
+  }
+}

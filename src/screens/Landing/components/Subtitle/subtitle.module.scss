@@ -1,0 +1,12 @@
+.subtitle {
+  font-size: 24px;
+  line-height: 32px; 
+  text-transform: uppercase; 
+
+  @include tablet {
+    font-family: $BellezaFont;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+  }
+}

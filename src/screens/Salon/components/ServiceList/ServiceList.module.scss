@@ -1,0 +1,38 @@
+.servicesBtn {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.record {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -1px;
+}
+
+.name, .quantity {
+  font-size: 12px;
+}
+
+.name {
+  text-align: left;
+  @include textOverflow(1)
+}
+
+.quantity {
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.more-wrapper {
+  display: flex;
+  justify-content: center;
+}

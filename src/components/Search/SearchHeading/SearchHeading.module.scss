@@ -1,0 +1,7 @@
+.wrapper {
+  display: flex;
+  @include tablet {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+}

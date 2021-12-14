@@ -1,0 +1,16 @@
+.page {
+  overflow-x: hidden;
+  
+  &_offset-top {
+    &_header {
+      padding-top: headerHeight(regular);
+      
+      @include medium {
+        padding-top: headerHeight(medium);
+      }
+      @include tablet {
+        padding-top: headerHeight(tablet);
+      }
+    }
+  }
+}

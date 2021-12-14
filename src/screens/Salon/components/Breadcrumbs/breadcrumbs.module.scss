@@ -1,0 +1,11 @@
+
+.item {
+  margin-bottom: 40px;
+
+  @include medium {
+    margin-bottom: 32px;
+  }
+  @include tablet {
+    display: none;
+  }
+}

@@ -1,0 +1,26 @@
+.rating {
+  margin-bottom: 11px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mobile {
+    margin-bottom: 11px;
+    &:last-child {
+      margin-bottom: 58px;
+    }
+  }
+}
+
+.label {
+  text-transform: none;
+  text-align: center;
+  margin-bottom: 15px;
+
+  @include mobile {
+    margin-bottom: 30px;
+  }
+}
+
+.icon {
+  padding: 0 4px;
+}

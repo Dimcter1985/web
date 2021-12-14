@@ -1,0 +1,74 @@
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 20px;
+  
+  &_status {
+    &_payment_failed {
+      background-color: $paymentFailed;
+    }
+  }
+}
+
+.header-date, .header-time, .header-details {
+  text-transform: uppercase;
+}
+
+.header-date, .header-time {
+  @include mobile {
+    font-size: 18px;
+  }
+}
+
+.header-date, .title {
+  min-width: 100px;
+
+  @include mobile {
+    min-width: 80px;
+  }
+}
+
+.header-date {
+  font-weight: bold;
+}
+
+.header-details {
+  margin-left: auto;
+  @include mobile {
+    font-size: 14px;
+  }
+}
+
+.issue-text {
+  font-family: $Lato;
+  color: $paymentFailed;
+  font-weight: 700;
+  padding: 0 20px;
+  margin-top: 15px;
+}
+
+.info {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.info-line {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-weight: bold;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  @include mobile {
+    font-size: 18px;
+  }
+}

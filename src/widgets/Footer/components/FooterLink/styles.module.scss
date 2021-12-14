@@ -1,0 +1,8 @@
+.link {
+  line-height: 32px;
+
+  @include medium {
+    font-size: initial;
+    line-height: 32px;
+  }
+}

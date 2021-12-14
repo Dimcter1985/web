@@ -1,0 +1,12 @@
+.root {
+  text-align: right;
+
+  @include mobile {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+.text {
+  line-height: 24px;
+}

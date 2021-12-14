@@ -1,0 +1,36 @@
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  text-transform: uppercase;
+  cursor: default;
+  margin-right: 90px;
+}
+
+.title, .button {
+  font-size: 16px;
+}
+
+.button {
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0.5;
+
+  &_active {
+    opacity: 1;
+  }
+}
+
+.separator {
+  margin: 4px 10px;
+  &_color {
+    &_black {
+      background-color: $black;
+    }
+    &_white {
+      background-color: $white;
+    }
+  }
+}

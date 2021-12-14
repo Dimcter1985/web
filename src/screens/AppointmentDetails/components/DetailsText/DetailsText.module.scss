@@ -1,0 +1,18 @@
+.text {
+  text-transform: uppercase;
+
+
+  &_position {
+    &_center {
+      text-align: center;
+    }
+
+    &_right {
+      text-align: right;
+    }
+  }
+
+  @include mobile {
+    font-size: 18px;
+  }
+}

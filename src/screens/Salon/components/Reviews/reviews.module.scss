@@ -1,0 +1,32 @@
+.container {
+  margin-bottom: 78px;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
+}
+
+.subheading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.starWrapper {
+  display: flex;
+  margin-right: 8px;
+}
+
+.moreBtnWrapper {
+  display: none;
+  justify-content: center;
+
+  &_visible {
+    display: flex;
+  }
+}
+.showMoreBtn {
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,72 @@
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 100px;
+}
+
+.cardsGrid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: -130px;
+  margin-bottom: 60px;
+
+  position: relative;
+  z-index: 20;
+  
+  @include medium {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
+.salonsCarousel {
+  display: none;
+  margin: -130px -10px 48px;
+  overflow: visible;
+
+  @include tablet {
+    margin-top: -108px;
+  }
+  @include mobile {
+    display: flex;
+  }
+}
+
+.salonCard {
+
+  @include mobile {
+    margin: 0px 10px;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.link {
+  align-self: center;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.button {
+  width: 360px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+
+  @include tablet {
+    width: 220px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}

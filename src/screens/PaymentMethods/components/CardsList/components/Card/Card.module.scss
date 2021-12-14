@@ -1,0 +1,143 @@
+.card {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+.info {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.big-icon {
+  display: block;
+  @include tablet {
+    display: none;
+  }
+}
+
+.small-icon {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}
+
+.info-text, .primary, .delete-button, .delete-text, .make-primary {
+  text-transform: uppercase;
+}
+
+.info-text, .expires, .name {
+  font-size: 24px;
+}
+
+.info-text {
+  margin-right: auto;
+  margin-left: 25px;
+
+  @include tablet {
+    margin-left: 16px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.primary {
+  opacity: 0.6;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.make-primary {
+  opacity: 0.6;
+}
+
+.arrow {
+  margin-left: 65px;
+
+  @include tablet {
+    margin-left: 25px;
+  }
+
+  &_open {
+    transform: rotate(180deg);
+  }
+}
+
+.extra-info {
+  margin-top: 10px;
+}
+
+.name {
+  margin-bottom: 4px;
+}
+
+.expires, .name {
+  font-size: 18px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.name-expires-default {
+  margin-left: 95px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.name-expires-mobile {
+  display: none;
+  margin-top: 4px;
+  margin-left: 50px;
+  text-align: left;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.action-buttons {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.delete-button {
+  margin-left: 30px;
+}
+
+.delete-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 48px;
+}
+
+.delete-text {
+  font-weight: bold;
+}
+
+.delete-icon {
+  margin-right: -12px;
+}
+
+.separator {
+  margin: 20px 0;
+
+  @include tablet {
+    margin: 16px 0;
+  }
+
+  &:last-child {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+}

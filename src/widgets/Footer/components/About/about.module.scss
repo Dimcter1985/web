@@ -1,0 +1,13 @@
+
+.root {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  min-width: 150px;
+  
+  @include mobile {
+    align-items: center;
+    margin-bottom: 48px;
+    order: 2;
+  }
+}

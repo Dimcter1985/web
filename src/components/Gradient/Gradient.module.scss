@@ -1,0 +1,41 @@
+.gradient {
+  position: absolute;
+  width: 100vmin;
+  height: 100vmin;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    var(--first-color) 30%,
+    var(--second-color) 100%
+  );
+  z-index: -1;
+
+  &_position {
+    &_top, &_center, &_bottom {
+      left: 50%;
+    }
+    &_left, &_center, &_right {
+      top: 50%;
+    }
+    &_top, &_center, &_left {
+      transform: translate(-50%, -50%);
+    }
+    &_top {
+      top: 0;
+    }
+    &_bottom {
+      bottom: 0;
+      transform: translate(-50%, 50%);
+    }
+    &_left {
+      left: 0;
+    }
+    &_right {
+      right: 0;
+      transform: translate(50%, -50%);
+      @include mobile {
+        top: 30%;
+      }
+    }
+  }
+}
+

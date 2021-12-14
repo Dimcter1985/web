@@ -1,0 +1,8 @@
+
+.item {
+  max-width: 482px;
+
+  @include mobile {
+    max-width: initial;
+  }
+}

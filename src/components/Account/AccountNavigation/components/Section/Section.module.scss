@@ -1,0 +1,12 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.title {
+  cursor: default;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}

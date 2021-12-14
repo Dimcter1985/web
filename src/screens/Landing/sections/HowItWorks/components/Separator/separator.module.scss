@@ -1,0 +1,18 @@
+
+.item {
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    flex-grow: 1;
+    content: ' ';
+    display: block;
+    max-width: 650px;
+    background-color: $whiteAccent;
+    height: 1px;
+
+    @include tablet {
+      margin: 0px 40px;
+    }
+  }
+}

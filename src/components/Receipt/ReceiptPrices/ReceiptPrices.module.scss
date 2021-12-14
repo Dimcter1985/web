@@ -1,0 +1,28 @@
+.finalPrice, .totalPrice, .totalTextItem, .totalText {
+  opacity: 0.87;
+}
+
+.finalPrice, .totalPrice {
+  font-size: 20px;
+  line-height: 20px;
+
+  @include mobile {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.totalPrice {
+  font-weight: bold;
+}
+
+.totalTextItem {
+  @include mobile {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.totalText {
+  font-weight: bold;
+}

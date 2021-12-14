@@ -1,0 +1,93 @@
+
+.outer {
+  padding-top: 120px;
+  padding-bottom: 180px;
+  background-image: image-set(
+    url(./images/back@1x.jpg) 1x,
+    url(./images/back@2x.jpg) 2x,
+  );
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center left;
+
+  @include tablet {
+    height: 520px;
+    padding: 0;
+    background-image: image-set(
+      url(./images/back_small@1x.jpg) 1x,
+      url(./images/back_small@2x.jpg) 2x,
+    );
+    background-size: cover;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+
+  @include tablet {
+    padding: 0px 20px;
+  }
+}
+
+.content {
+  width: 38%;
+
+  @include medium {
+    width: 50%;
+  }
+  @include tablet {
+    width: initial;
+    margin-top: 210px;
+    padding: 48px 38px 56px;
+    background-color: white;
+  }
+}
+
+.title {
+  margin-bottom: 12px;
+
+  @include tablet {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+}
+
+.subtitle {
+  margin-bottom: 70px;
+  text-align: center;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
+}
+
+.linksGroup {
+  display: flex;
+  justify-content: center;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.qrImage {
+  margin-right: 26px;
+
+  @include tablet {
+    margin: 0 0 40px 0;
+  }
+}
+
+.appsLinks {
+  margin-top: 10px;
+
+  @include tablet {
+    margin-top: 0;
+  }
+}
+
+.appStore {
+  margin-bottom: 22px;
+}

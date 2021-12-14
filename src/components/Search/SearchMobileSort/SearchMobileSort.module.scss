@@ -1,0 +1,35 @@
+.container {
+  margin-top: 25px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sorts {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+}
+
+.confirm-button {
+  display: block;
+  width: 315px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.confirm-label {
+  font-size: 18px;
+  font-weight: 700;
+}

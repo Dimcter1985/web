@@ -1,0 +1,4 @@
+[submodule "src/core"]
+	path = src/core
+	url = ../customer-app-core.git
+	

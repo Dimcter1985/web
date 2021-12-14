@@ -1,0 +1,31 @@
+.image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  margin-bottom: 18px;
+  background-color: lightgray;
+
+  @include medium {
+    height: 220px;
+  }
+  @include tablet {
+    margin-bottom: 12px;
+  }
+}
+.infoGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  @include textOverflow;
+
+  @include medium {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}

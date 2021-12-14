@@ -1,0 +1,22 @@
+
+.group {
+  position: relative;
+  height: headerHeight(regular);
+  transition: height;
+  transition-duration: 300ms;
+  display: flex;
+  align-items: center;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0px 40px;
+
+  @include medium {
+    height: headerHeight(medium);
+    padding: 0 4%;
+  }
+
+  @include tablet {
+    padding: 0;
+    height: headerHeight(tablet);
+  }
+}

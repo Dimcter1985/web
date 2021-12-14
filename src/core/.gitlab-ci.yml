@@ -1,0 +1,38 @@
+stages:
+  - linters
+  - tests
+
+variables:
+  CI: 'true'
+
+cache:
+  key: 'snailz-client-core'
+  paths:
+    - /builds/snailz/client-core/node_modules
+
+eslint:
+  stage: linters
+  image: node:erbium-alpine
+  before_script:
+    - apk add git
+    - yarn install --checkfiles
+  script:
+    - yarn lint
+
+jest:
+  stage: tests
+  image: node:erbium-alpine
+  before_script:
+    - apk add git
+    - yarn install --checkfiles
+  script:
+    - yarn test
+
+tsc:
+  stage: linters
+  image: node:erbium-alpine
+  before_script:
+    - apk add git
+    - yarn install --checkfiles
+  script:
+    - yarn tsc

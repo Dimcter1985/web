@@ -1,0 +1,8 @@
+.item {
+  width: 20%;
+  height: 40px;
+
+  @include mobile {
+    font-size: 14px;
+  }
+}

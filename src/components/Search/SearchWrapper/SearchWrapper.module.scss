@@ -1,0 +1,46 @@
+.root {
+  overflow: initial;
+}
+
+.page-container {
+  overflow: initial;
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.container {
+  display: flex;
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.search-bar-wrapper {
+  display: flex;
+  max-width: 740px;
+  width: 100%;
+  margin-top: 40px;
+  margin-left: 40px;
+
+  @include medium {
+    max-width: 610px;
+  }
+
+  @include tablet {
+    border-top: 1px solid rgba(0, 0,0, 0.16);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    max-width: initial;
+    padding: 15px 15px 15px 13px;
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
+
+.search-bar {
+  width: 100%;
+
+  @include tablet {
+    margin-left: 20px;
+  }
+}

@@ -1,0 +1,12 @@
+
+.item {
+  margin: 0px auto;
+  max-width: 1000px;
+  
+  @include medium {
+    max-width: 860px;
+  }
+  @include tablet {
+    margin: 40px 5vw 60px;
+  }
+}

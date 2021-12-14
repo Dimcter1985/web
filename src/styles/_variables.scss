@@ -1,0 +1,32 @@
+// Colors
+$black: #000000;
+$white: #ffffff;
+$pink: #EFC2B1;
+$lightGray: #DCDCDC;
+$perano: #92ABF3;
+$gray: rgba(0, 0, 0, 0.35);
+$red: #E35B5B;
+$paymentFailed: #B00020;
+
+$textSecondary: rgba($black, 0.5);
+
+$whiteAccent: rgba($white, 0.87);
+
+$blackAccent: #121212;
+$blackColorAccent: rgba($black, 0.87);
+
+// Fonts
+$BellezaFont: Belleza, sans-serif;
+$TenorSans: 'Tenor Sans', sans-serif;
+$Lato: 'Lato', sans-serif;
+
+// Sizes
+$header_regular: 120px;
+$header_medium: 80px;
+$header_tablet: 65px;
+
+$header: (
+  regular: $header_regular,
+  medium: $header_medium,
+  tablet: $header_tablet,
+);

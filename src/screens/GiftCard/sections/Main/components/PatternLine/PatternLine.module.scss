@@ -1,0 +1,23 @@
+.line {
+  display: flex;
+  flex-direction: row;
+  margin-left: -100px;
+  margin-right: -100px;
+  line-height: 0;
+  
+  &_inverted {
+    transform: rotateX(180deg);
+  }
+
+  @include mobile {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+.item {
+  width: 16.66%;
+  &:nth-child(2n + 1) {
+    transform: rotateY(180deg);
+  }
+}

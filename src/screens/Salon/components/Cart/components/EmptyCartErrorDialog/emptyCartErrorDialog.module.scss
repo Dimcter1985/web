@@ -1,0 +1,8 @@
+
+.content {
+  margin-top: 110px;
+
+  @include tablet {
+    margin-top: 60px;
+  }
+}

@@ -1,0 +1,22 @@
+.activeText {
+  display: none;
+  font-size: 18px;
+  line-height: 23px;
+  transform: translateX(26px);
+
+  @include mobile {
+    display: block;
+  }
+}
+.button {
+  display: none;
+  margin-right: -8px;
+  padding: 5px 8px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  @include mobile {
+    display: block;
+  }
+}

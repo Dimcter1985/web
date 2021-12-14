@@ -1,0 +1,9 @@
+.menuItem {
+  display: block;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  & + & {
+    margin-top: 24px;
+  }
+}

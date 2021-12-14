@@ -1,0 +1,9 @@
+.container {
+  width: 570px;
+  padding: 19px 25px;
+
+  @include tablet {
+    width: initial;
+    padding: 20px;
+  }
+}

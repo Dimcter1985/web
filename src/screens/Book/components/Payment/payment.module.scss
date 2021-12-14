@@ -1,0 +1,70 @@
+.group {
+  margin-bottom: 40px;
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
+.caption {
+  margin-bottom: 20px;
+}
+.primaryCartGroup {
+  display: flex;
+  align-items: center;
+}
+.errorRoot {
+  align-items: flex-start;
+  margin-top: 13px;
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+}
+.errorIcon {
+  margin-top: 6px;
+  @include tablet {
+    margin-top: 5px;
+  }
+}
+.cartInfo {
+  font-size: 24px;
+  line-height: 20px;
+  text-transform: uppercase;
+  opacity: 0.87;
+
+  @include mobile {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+.changeCartBtn {
+  font-size: 20px;
+  padding: 0;
+  font-weight: normal;
+  opacity: 0.87;
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.errorMessage {
+  margin: 10px 0;
+  font-size: 1rem;
+
+  @include mobile {
+    font-size: initial;
+  }
+}
+.creditText {
+  font-size: 24px;
+  line-height: 20px;
+  text-transform: uppercase;
+  opacity: 0.87;
+
+  @include mobile {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}

@@ -1,0 +1,23 @@
+.dialog {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+.caption {
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  margin-right: auto;
+  margin-left: auto;
+  transform: translateX(-10px);
+}
+.themeWrapper {
+  flex-grow: 1;
+  padding-bottom: 40px;
+}
+.calendarWrapper {
+  display: flex;
+  justify-content: center;
+}

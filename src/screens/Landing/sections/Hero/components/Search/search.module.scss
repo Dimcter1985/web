@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 20px 142px;
+  
+  @include medium {
+    max-width: 720px;
+  }
+}
+
+.surface {
+  padding: 24px 30px 30px;
+
+  @include tablet {
+    padding: 16px;
+  }
+}
+
+.searchBar {
+  margin-bottom: 16px;
+}
+
+.input {
+  @include tablet {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,16 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $white;
+  padding-top: headerHeight(tablet) + 10px;
+  transform: translateX(-100%);
+  transition-property: transform;
+  transition-duration: 300ms;
+
+  &_visible {
+    transform: translateX(0);
+  }
+}

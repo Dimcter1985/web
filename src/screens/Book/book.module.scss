@@ -1,0 +1,120 @@
+.container {
+  @include mobile {
+    margin-top: 30px;
+  }
+}
+
+.updateDateTimeBtn {
+  font-weight: normal;
+}
+
+.backWrapp {
+  display: flex;
+  justify-content: center;
+
+  @include mobile {
+    justify-content: initial;
+  }
+}
+
+.backBtn {
+  @include tablet {
+    padding: 1px 10px;
+  }
+
+  @include mobile {
+    margin-left: -6px;
+    padding: 1px 6px;
+  }
+}
+
+.title {
+  margin-left: auto;
+  margin-right: auto;
+  @include mobile {
+    font-size: 20px;
+  }
+}
+
+.dateTime {
+  margin-top: 65px;
+  margin-bottom: 50px;
+
+  @include mobile {
+    margin: 40px 0;
+  }
+}
+
+.specialTextArea {
+  padding-left: 30px;
+
+  @include mobile {
+    padding-left: 10px;
+  }
+}
+
+.specialTextAreaInput {
+  font-size: 20px;
+  &::placeholder {
+    opacity: 0.38;
+  }
+
+  @include mobile {
+    font-size: 1rem;
+  }
+}
+
+.specialTextAreaMultiline {
+  @include mobile {
+    min-height: 38px;
+  }
+}
+
+.specialCaption {
+  margin: 50px 0 20px;
+
+  @include mobile {
+    margin: 35px 0 10px;
+  }
+}
+
+.bookBtn {
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  &_disabled {
+    opacity: 0.5;
+  }
+}
+.submitError {
+  margin-bottom: 20px;
+}
+
+.addServiceLink {
+  margin-top: 30px;
+
+  @include mobile {
+    margin-top: 12px;
+  }
+}
+
+.services {
+  margin-bottom: 30px;
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
+
+.cancelPolicy {
+  font-size: 24px;
+  max-width: 500px;
+  margin-top: 20px;
+  opacity: 0.87;
+
+  @include mobile {
+    font-size: 1rem;
+    max-width: 315px;
+    margin-top: 10px;
+  }
+}

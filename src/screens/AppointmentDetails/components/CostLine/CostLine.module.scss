@@ -1,0 +1,12 @@
+.cost-line {
+  display: flex;
+  justify-content: space-between;
+
+  &_bold {
+    font-weight: bold;
+  }
+}
+
+.text {
+  font-weight: inherit;
+}

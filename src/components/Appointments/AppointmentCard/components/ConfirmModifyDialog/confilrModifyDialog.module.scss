@@ -1,0 +1,15 @@
+
+.separator {
+  @include tablet {
+    display: none;
+  }
+}
+.content {
+  margin-top: 20px;
+  padding: 0 108px;
+
+  @include tablet {
+    margin-top: 0;
+    padding: 0 26px;
+  }
+}

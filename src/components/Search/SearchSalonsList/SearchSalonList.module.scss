@@ -1,0 +1,15 @@
+.list {
+  margin-bottom: 65px;
+
+  @include tablet {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mobile {
+    max-width: initial;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

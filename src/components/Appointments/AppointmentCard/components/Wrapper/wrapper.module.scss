@@ -1,0 +1,16 @@
+
+.item {
+  max-width: 550px;
+  margin: 0 auto 90px auto;
+
+  &:last-child {
+    margin-bottom: 220px;
+  }
+  
+  @include mobile {
+    margin-bottom: 55px;
+    &:last-child {
+      margin-bottom: 150px;
+    }
+  }
+}

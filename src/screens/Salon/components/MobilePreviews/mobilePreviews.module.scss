@@ -1,0 +1,25 @@
+
+.container {
+  position: relative;
+  display: none;
+  margin-bottom: 16px;
+
+  @include mobile {
+    display: block;
+  }
+}
+.backButton {
+  position: absolute;
+  top: 22px;
+  left: 26px;
+  z-index: 1;
+}
+.counter {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 4px 8px;
+  background-color: black;
+  font-size: 12px;
+  line-height: 12px;
+}

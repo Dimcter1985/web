@@ -1,0 +1,23 @@
+
+.themeWrapper {
+  flex-grow: 1;
+  padding-bottom: 40px;
+  overflow: auto;
+}
+.continueBtnWrapper {
+  display: flex;
+  justify-content: center;
+  margin: auto 5vw 0px;
+}
+.continueBtn {
+  width: 320px;
+  height: 60px;
+  font-size: 24px;
+  line-height: 30px;
+
+  @include mobile {
+    width: 100%;
+    height: 48px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,14 @@
+.menu {
+  width: 320px;
+}
+
+.item {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  justify-content: center;
+  
+  @include mobile {
+    font-size: 18px;
+  }
+}

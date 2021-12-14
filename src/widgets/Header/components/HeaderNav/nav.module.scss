@@ -1,0 +1,11 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 13px;
+  z-index: 2;
+
+  @include tablet {
+    margin-right: 20px;
+  }
+}
